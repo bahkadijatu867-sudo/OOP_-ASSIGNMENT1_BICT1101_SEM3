@@ -1,0 +1,60 @@
+==============================================================
+ CITIZEN COMPLAINT SYSTEM - DEMONSTRATION
+==============================================================
+
+1) Creating anonymous citizens (no names or phone numbers)...
+  Citizen Ref : CIT-0001
+  District    : Western Area Urban
+  Filed       : 0 complaint(s)
+
+  Citizen Ref : CIT-0002
+  District    : Bo
+  Filed       : 0 complaint(s)
+
+2) Citizens file complaints (Citizen -> Complaint -> Registry)...
+  3 complaints filed successfully.
+
+3) Displaying all complaints stored in the dictionary:
+
+  [CMP-0001] Water | Priority: Urgent | Status: Received
+      Filed by   : CIT-0001 (Western Area Urban) on 2026-10-03
+      Department : Ministry of Water Resources
+      Details    : No running water in our street for two weeks.
+
+  [CMP-0002] Roads | Priority: Normal | Status: Received
+      Filed by   : CIT-0001 (Western Area Urban) on 2026-10-03
+      Department : Sierra Leone Roads Authority
+      Details    : Large pothole near the junction. Call me on [phone removed].
+
+  [CMP-0003] Education | Priority: Low | Status: Received
+      Filed by   : CIT-0002 (Bo) on 2026-10-03
+      Department : Ministry of Basic & Senior Secondary Education
+      Details    : School has no teachers for Mathematics.
+
+4) Officials update complaint progress (instance methods)...
+  [CMP-0001] Water | Priority: Urgent | Status: Under Review
+      Filed by   : CIT-0001 (Western Area Urban) on 2026-10-03
+      Department : Ministry of Water Resources
+      Details    : No running water in our street for two weeks.
+
+  [CMP-0002] Roads | Priority: Normal | Status: Resolved
+      Filed by   : CIT-0001 (Western Area Urban) on 2026-10-03
+      Department : Sierra Leone Roads Authority
+      Details    : Large pothole near the junction. Call me on [phone removed].
+
+5) Error handling - trying to move a complaint backwards:
+  Error caught: Cannot move from 'Resolved' to 'Received'.
+
+6) Class methods and static methods:
+  Complaint.total_complaints()      -> 3
+  Citizen.total_citizens()          -> 2
+  Complaint.available_categories()  -> water, roads, electricity, waste, health, education
+  Complaint.is_valid_description('Too short') -> False
+
+7) Summary report:
+  Total complaints: 3
+    Received     : 1
+    Under Review : 1
+    Resolved     : 1
+
+==============================================================
