@@ -1,10 +1,5 @@
 # Citizen Complaint System
 
-**Module:** PROG211 – Object-Oriented Programming 1 (Limkokwing University of Creative Technology, Sierra Leone)
-**Assignment:** Real-World Solutions under DPG Standards
-**Domain:** Government – Citizen Complaint System
-**Author:** `<YOUR FULL NAME>` | **Student ID:** `<YOUR ID>`
-
 ## The Problem
 Citizens often struggle to report broken public services (no water, damaged roads, power cuts,
 uncollected waste, school and clinic problems) and then never learn what happened to their report.
